@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cricket Quiz</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <style>
+     .my {
+          background-color:cadetblue;
+          color:palegoldenrod;
+          text-align:center;
+          width:max-content;
+          margin:auto;
+     }
+  </style>
+  
+</head>
+
+<body style="background-color:bisque">
+<h1 style="color:navy; text-align:center;">QUIZ</h1>
+<form name="divi">
+<div class="my">
+1. Who has taken most wickets in International Cricket?<br><br>
+&nbspa. Shane Warne : <input type="radio" name="qu1" value="a"><br>
+&nbspb. M.Muralidaran :  <input type="radio" name="qu1" value="b"><br>
+&nbspc. Anil Kumble :  <input type="radio" name="qu1" value="c"><br>
+&nbspd. Wasim Akram :  <input type="radio" name="qu1" value="d">
+</div>
+<br><br>
+<div class="my">
+2. Which is the largest Cricket Stadium in the world?<br><br>
+&nbspa. Eden Gardens : <input type="radio" name="qu2" value="a"><br>
+&nbspb. MCG :  <input type="radio" name="qu2" value="b"><br>
+&nbspc. Narendra Modi Stadium :  <input type="radio" name="qu2" value="c"><br>
+&nbspd. M.A.Chidambaram Stadium :  <input type="radio" name="qu2" value="d">
+</div>
+<br><br> 
+<div class="my">
+3. Which team has won most ODI matches?<br><br>
+&nbspa. Australia : <input type="radio" name="qu3" value="a"><br>
+&nbspb. South Africa :  <input type="radio" name="qu3" value="b"><br>
+&nbspc. India :  <input type="radio" name="qu3" value="c"><br>
+&nbspd. Pakistan :  <input type="radio" name="qu3" value="d">
+</div>
+ <br><br>
+<div class="my">
+4. Who has taken more hat-tricks in International Cricket?<br><br>
+&nbspa. M.Muralidaran : <input type="radio" name="qu4" value="a"><br>
+&nbspb. Shoaib Akhtar : <input type="radio" name="qu4" value="b"><br>
+&nbspc. Harbhajan Singh : <input type="radio" name="qu4" value="c"><br>
+&nbspd. Lasith Malinga : <input type="radio" name="qu4" value="d">
+</div>
+ <br><br>
+<div class="my">
+5. Which of these batsman has scored hat-trick hundreds in Cricket?<br><br>
+&nbspa. Sachin Tendulkar : <input type="radio" name="qu5" value="a"><br>
+&nbspb. Virat Kohli : <input type="radio" name="qu5" value="b"><br>
+&nbspc. Rohit Sharma : <input type="radio" name="qu5" value="c"><br>
+&nbspd. Virendar Sehwag : <input type="radio" name="qu5" value="d">
+ </div>
+<br><br>
+<div class="my">
+6. Which team holds record for most wins in T20I?<br><br>
+&nbspa. India : <input type="radio" name="qu6" value="a"><br>
+&nbspb. Australia : <input type="radio" name="qu6" value="b"><br>
+&nbspc. Pakistan : <input type="radio" name="qu6" value="c"><br>
+&nbspd. England : <input type="radio" name="qu6" value="d">
+ </div>
+<br><br>
+<div class="my">
+7. Who has scored most fifties in ICC T20I world cups?<br><br>
+&nbspa. Virat Kohli : <input type="radio" name="qu7" value="a"><br>
+&nbspb. Chris Gayle : <input type="radio" name="qu7" value="b"><br>
+&nbspc. Rohit Sharma : <input type="radio" name="qu7" value="c"><br>
+&nbspd. David Warner : <input type="radio" name="qu7" value="d">
+ </div>
+<br><br>
+<div class="my">
+8. Who was the fastest to reach No.1 Ranking in ODI?<br><br>
+&nbspa. Babar Azam : <input type="radio" name="qu8" value="a"><br>
+&nbspb. Virat Kohli : <input type="radio" name="qu8" value="b"><br>
+&nbspc. Ricky Ponting : <input type="radio" name="qu8" value="c"><br>
+&nbspd. M.S.Dhoni : <input type="radio" name="qu8" value="d">
+ </div>
+<br><br>
+<div class="my">
+9. Most Runs in T20I<br><br>
+&nbspa. Martin Guptill : <input type="radio" name="qu9" value="a"><br>
+&nbspb. Rohit Sharma : <input type="radio" name="qu9" value="b"><br>
+&nbspc. Virat Kohli : <input type="radio" name="qu9" value="c"><br>
+&nbspd. Babar Azam : <input type="radio" name="qu9" value="d">
+ </div>
+<br><br>
+<div class="my">
+10. Who has scored fastest hundred in T20I?<br><br>
+&nbspa. Ab Devilliers : <input type="radio" name="qu10" value="a"><br>
+&nbspb. Chris Gayle : <input type="radio" name="qu10" value="b"><br>
+&nbspc. David Miller : <input type="radio" name="qu10" value="c"><br>
+&nbspd. Jos Buttler : <input type="radio" name="qu10" value="d">
+ </div>
+<br><br>
+<center>
+<input type="button" value="SUBMIT" onclick="c()">
+<input type="reset" value="RESET">
+
+<br><br>
+<div style="color:red; background-color:black;height:80px; width:400px; text-align:center;"><p>Your Score will be displayed here : </p><p id="h">-</p></div>
+<br>
+<br>
+</center>
+
+</form>
+
+<script>
+
+ function c() {
+       var q1 = document.forms[0].qu1.value;
+       var q2 = document.forms[0].qu2.value;
+       var q3 = document.forms[0].qu3.value;
+       var q4 = document.forms[0].qu4.value;
+       var q5 = document.forms[0].qu5.value;
+       var q6 = document.forms[0].qu6.value;
+       var q7 = document.forms[0].qu7.value;
+       var q8 = document.forms[0].qu8.value;
+       var q9 = document.forms[0].qu9.value;
+       var q10 = document.forms[0].qu10.value;
+       
+       ans = ["b","c","a","d","b","c","a","d","b","c"];
+       var  n=10;
+       var  s=0;
+       wr = [];
+       for(var i=1; i<=n; i++) {
+            if (eval("q"+i)== "") {
+               alert("You didn't answer No. "+i+" question.");
+               return false;
+            }
+       }
+       
+       for (var i=1; i<=n; i++) {
+              if (eval("q"+i)== ans[i-1]) {
+                       s++;
+              }
+              else{
+                   wr.push(i);
+                       
+              }
+       }
+       if (wr.length>0){
+          var r = document.getElementById('h');
+          r.innerHTML='You score : '+s+', Qu.no.'+wr+' wrong';
+       }
+       else {
+            var r = document.getElementById('h');
+          r.innerHTML='You have answered all questions correctly';
+       }
+ }
+ 
+ </script>
+</body>
+
+</html>
